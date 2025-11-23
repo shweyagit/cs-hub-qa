@@ -7,7 +7,10 @@ on:
 
 jobs:
   tests:
-    runs_on:  ubantu_latest
+    runs_on:  ubuntu_latest
     steps:  
+      - name: Checkout code
+        uses: actions/checkout@v4
+
       - name: Say Hello
-      - run: echo "Hi Shweta from gitHub Action"
+        run: echo "Hi Shweta from gitHub Action"
