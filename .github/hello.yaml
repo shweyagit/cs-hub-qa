@@ -1,0 +1,13 @@
+Name: My Workflow
+
+on:
+  push:
+    branches:
+      -main
+
+jobs:
+  tests:
+    runs_on:  ubantu_latest
+    steps:  
+      - name: Say Hello
+      - run: echo "Hi Shweta from gitHub Action"
